@@ -12,7 +12,7 @@ const app = express();
 // ✅ Allow only your Netlify frontend (CORS)
 app.use(
   cors({
-    origin: "https://zesty-sprinkles-859cb8.netlify.app", // your frontend URL
+    origin: "*", // your frontend URL
     credentials: true,
   })
 );
@@ -24,7 +24,7 @@ const server = http.createServer(app);
 
 export const io = new Server(server, {
   cors: {
-    origin: "https://zesty-sprinkles-859cb8.netlify.app",
+    origin: "https://heartfelt-puppy-0d28f4.netlify.app",
     methods: ["GET", "POST"],
     credentials: true,
   },
