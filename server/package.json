@@ -1,7 +1,7 @@
 {
   "name": "serverr",
   "version": "1.0.0",
-  "main": "serverr.js",
+  "main": "server.js",
   "scripts": {
     "server": "nodemon server.js",
     "start": "node server.js"

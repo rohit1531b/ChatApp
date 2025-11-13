@@ -10,7 +10,10 @@ import { Server } from "socket.io";
 
 const app = express();
 const server = http.createServer(app)
-
+app.use(cors({
+  origin: "https://zesty-sprinkles-859cb8.netlify.app",
+  credentials: true, // add only if you use cookies/auth
+}));
 // Initialize socket.io server
 export const io = new Server(server, {
     cors: {origin: "*"}
