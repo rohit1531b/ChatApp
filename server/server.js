@@ -12,10 +12,15 @@ const app = express();
 // ✅ Allow only your Netlify frontend (CORS)
 app.use(
   cors({
-    origin: "*", // your frontend URL
+    origin: [
+      "https://heartfelt-puppy-0d28f4.netlify.app",
+      "https://zesty-sprinkles-859cb8.netlify.app",
+      "https://talkietalk.netlify.app"
+    ],
     credentials: true,
   })
 );
+
 
 app.use(express.json({ limit: "5mb" }));
 
@@ -29,6 +34,7 @@ export const io = new Server(server, {
     credentials: true,
   },
 });
+
 
 export const userSocketMap = {}; // { userId: socketId }
 
