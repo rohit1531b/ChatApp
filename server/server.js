@@ -16,7 +16,7 @@ app.use(
       "https://heartfelt-puppy-0d28f4.netlify.app",
       "https://zesty-sprinkles-859cb8.netlify.app",
       "https://talkietalk.netlify.app",
-      "https://spiffy-kheer-eff382.netlify.app"
+      
     ],
     credentials: true,
   })
@@ -30,7 +30,7 @@ const server = http.createServer(app);
 
 export const io = new Server(server, {
   cors: {
-    origin: "https://heartfelt-puppy-0d28f4.netlify.app",
+    origin: "https://talkietalkv1.netlify.app",
     methods: ["GET", "POST"],
     credentials: true,
   },
