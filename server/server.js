@@ -15,7 +15,8 @@ app.use(
     origin: [
       "https://heartfelt-puppy-0d28f4.netlify.app",
       "https://zesty-sprinkles-859cb8.netlify.app",
-      "https://talkietalk.netlify.app"
+      "https://talkietalk.netlify.app",
+      "https://spiffy-kheer-eff382.netlify.app"
     ],
     credentials: true,
   })
